@@ -56,18 +56,18 @@
 
 
 
-# ticketNumber = int(input("Введите шестизначный номер билета: "))
+ticketNumber = int(input("Введите шестизначный номер билета: "))
 
-# firstNumber = ticketNumber // 1000
-# sumFirstNumber = firstNumber // 100 + firstNumber % 10 + firstNumber % 100 // 10  # Сумма первых трех чисел билета
+firstNumber = ticketNumber // 1000
+sumFirstNumber = firstNumber // 100 + firstNumber % 10 + firstNumber % 100 // 10  # Сумма первых трех чисел билета
 
-# secondNumber = ticketNumber % 1000
-# sumSecondNumber = secondNumber // 100 + secondNumber % 10 + secondNumber % 100 // 10 # Сумма последних трех чисел билета
+secondNumber = ticketNumber % 1000
+sumSecondNumber = secondNumber // 100 + secondNumber % 10 + secondNumber % 100 // 10 # Сумма последних трех чисел билета
 
-# if sumFirstNumber == sumSecondNumber:
-#     print(ticketNumber,"\t-> yes - у вас счастливый билет!")
-# else:
-#     print(ticketNumber,"\t-> no - увы вам не повезло!")
+if sumFirstNumber == sumSecondNumber:
+    print(ticketNumber," -> yes - у вас счастливый билет!")
+else:
+    print(ticketNumber," -> no - увы вам не повезло!")
 
 
 #---------------------------------------------------------------------------
@@ -80,11 +80,11 @@
 # Пример: 3 2 4 -> yes
 #          3 2 1 -> no
 
-width = int(input("Введите количество долек по ширине шоколадки:"))
-length = int(input("Введите количество долек по длине шоколадки:"))
-quantity = int(input("Сколько вы желаете отломить долек за один разлом:"))
+# width = int(input("Введите количество долек по ширине шоколадки:"))
+# length = int(input("Введите количество долек по длине шоколадки:"))
+# quantity = int(input("Сколько вы желаете отломить долек за один разлом:"))
 
-if quantity % width == 0  or quantity % length == 0:
-    print("yes, вы можете это зделать за один разлом ")
-else:
-    print("no, вы не можете сделать это за один разлом")
+# if quantity % width == 0  or quantity % length == 0:
+#     print("yes, вы можете это зделать за один разлом ")
+# else:
+#     print("no, вы не можете сделать это за один разлом")
